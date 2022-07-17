@@ -69,11 +69,19 @@ body{
 }
 input[type="text"] , [type="email"] , [type="number"] {
   width: 70% ;
-  padding: 8px 5px ;
+    display: block;
+  padding:  5px ;  
+  margin: 2px;
+}
+label{
+  display: block;
+  margin: -4px;
+  
 }
 select{
    width: 70% ;
-  padding: 8px 5px ;
+  display: block;
+  padding:  5px ;
 }
 input:focus, select:focus{
   background-color: black;
@@ -81,10 +89,20 @@ input:focus, select:focus{
   font-family: Tahoma;
   font-size: 15px;
 }
-
-
-
-
+legend{
+ padding: 10px;
+}
+label{
+  padding: 0px 10px;
+}
+button{
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: grey;
+}
 @media (max-width: 700px){
   display: block;
   .right{

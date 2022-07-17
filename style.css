@@ -1,0 +1,80 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-image: url(img/abs.jpg);
+  color: white;
+  box-sizing: border-box;
+  font-family: Tahoma;
+}
+.left{
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  left: 35px;
+}
+.left img{
+  filter: invert(100%);
+  position: relative;
+  left: 30%;
+}
+.center{
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 60px ;
+}
+.right{
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 75px ;
+}
+.bell{
+  height: 45px;
+  width: 65px;
+}
+.navbar{
+  display: inline-block;
+}
+.navbar li{
+  display: inline-block;
+  font-size: 25px;
+  
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 23px;
+}
+.navbar li a:hover , .navbar li a.active{
+  background-color: green;
+}
+.btn{
+  padding: 15px 20px;
+  border: 2px solid white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: black;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+.btn:hover{
+ background-color: rgb(31 , 30 , 30 );
+}
+@media (max-width: 700px){
+  display: block;
+  
+  .right{
+    margin: 300px auto;
+  }
+   .navbar li a {
+    padding: 5px 15px ;
+  }
+  .center{
+    margin: 118px auto ;
+  }
+}
